@@ -7,6 +7,8 @@
 `kafka-topics --bootstrap-server localhost:9092 --list`
 ### List all acls
 `kafka-acls --bootstrap-server localhost:9092 --list`
+### Describe group and topic subscriptions / offsets for all groups
+`./kafka-consumer-groups --bootstrap-server localhost:9092 --all-groups  --describe`
 ### Describe group and topic subscriptions / offsets
 `kafka-consumer-groups --bootstrap-server localhost:9092  --describe --group $GROUP_NAME`
 ### Reset the offset for a specific group and specific topic
